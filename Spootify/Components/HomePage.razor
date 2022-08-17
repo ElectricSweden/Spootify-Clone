@@ -1,0 +1,38 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@using Spootify.Models
+@using Spootify.Services
+@inject JsonFileSongService SongService
+
+
+<div class="card-columns">
+    @foreach (var song in SongService.GetSongs())
+    {
+    <div class="card">
+        @song.Name <br> @song.Songwriter <br> @song.Length
+    </div>
+    <div class="btnOutline">
+        <small class="text-muted">
+            <button @onclick="(e => SelectSong(song.Name))"
+                data-toggle="modal" data-target="#songModal" class="mybtn">Add To Playlist</button>
+        </small>
+    </div>
+    }
+</div>
+
+@if(selectedSong != null)
+{
+     <h2 class="playlistNotis">The song @selectedSong.Name has been added to your playlist.</h2>
+     songList.Add(selectedSong);
+}
+
+@code {
+    public static List<Song> songList = new List<Song>();
+    Song selectedSong;
+    string selectedSongName;
+
+    void SelectSong(string songName)
+    {
+        selectedSongName = songName;
+        selectedSong = SongService.GetSongs().First(x => x.Name == songName);
+    }
+}

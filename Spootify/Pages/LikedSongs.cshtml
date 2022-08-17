@@ -1,0 +1,8 @@
+﻿@page
+@using Spootify.Components
+@model Spootify.Pages.LikedSongsModel
+@{
+	@(await Html.RenderComponentAsync<LikedSongs>(RenderMode.ServerPrerendered))
+
+	<script src="_framework/blazor.server.js"></script>
+}

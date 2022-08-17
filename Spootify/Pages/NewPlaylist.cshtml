@@ -1,0 +1,8 @@
+﻿@page
+@using Spootify.Components
+@model Spootify.Pages.NewPlaylistModel
+@{
+	@(await Html.RenderComponentAsync<NewPlaylist>(RenderMode.ServerPrerendered))
+
+	<script src="_framework/blazor.server.js"></script>
+}

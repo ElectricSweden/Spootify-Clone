@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#paragraph {
+    color: #0892d0;
+    font-weight: bold;
+}
+
+body {
+    background-color: #121212;
+}
+
+.display-4 {
+    color: white;
+}
+
+.card {
+    width: 180px;
+    height: 80px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #0892d0;
+    padding: 2px;
+    position: relative; left: 220px;
+
+}
+
+.mybtn {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 4px;
+    outline-color: transparent;
+    width: 120px;
+    height: 40px;
+}
+
+.btnOutline {
+    margin-top: 4px;
+    margin-bottom: 40px;
+    width: 20px;
+    position: relative; left: 220px;
+}
+
+.playlistNotis {
+    position: relative; left: 220px;
+    color: white;
+}
+
+.navBase {
+    width: 240px;
+    height: 100%;
+    background-color: black;
+    padding-top: 50px;
+    padding-left: 20px;
+    position: absolute;
+}
+
+.navItem {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navItem:hover {
+    color: white;
+}
+
+.listItem {
+    list-style: none;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.navText {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navText:hover {
+    color: lightgray;
+}
+
+.listContent {
+    padding: 0;
+}
+
+footer {
+    background-color: white;
+    opacity: 0.6;
+}
+
+.makeP {
+    list-style: none;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.makePitem {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.makePitem:hover {
+    color: #0892d0;
+}
+
+.playlistBtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+
+}
+
+.playlistBtn:hover {
+    text-decoration: underline;
+}

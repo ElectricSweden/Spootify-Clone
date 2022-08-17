@@ -1,0 +1,14 @@
+﻿@page
+@using Spootify.Components
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome, Olle!</h1>
+</div>
+
+@(await Html.RenderComponentAsync<HomePage>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>

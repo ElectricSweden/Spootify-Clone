@@ -1,0 +1,13 @@
+﻿@page
+@using Spootify.Components
+@model PlaylistModel
+@{
+    ViewData["Title"] = "Dina Spellistor";
+}
+<h1>@ViewData["Title"]</h1>
+<p id="paragraph">Här kan du se och redigera dina spellistor.</p>
+
+@(await Html.RenderComponentAsync<Playlist>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>
+

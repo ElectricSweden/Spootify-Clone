@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@using Spootify.Models
+@using Spootify.Services
+@inject JsonFileSongService SongService
+
+<div class="card-columns">
+    @foreach (var song in HomePage.songList)
+    {
+    <div class="listInfo">
+        <button class="playlistBtn" type="button">@song.Name, @song.Songwriter, @song.Length</button> "Här ska spellistor vara istället. Som visar sina spellistor. Vit dropdown med blå outline meny på höger sida. Spellista namn på vänster sida."
+    </div>
+    }
+</div>
+
+
+@code {
+
+}
