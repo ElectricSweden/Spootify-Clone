@@ -2,6 +2,7 @@
 @using Spootify.Components
 @model Spootify.Pages.LikedSongsModel
 @{
+	ViewData["Title"] = "Liked songs";
 	@(await Html.RenderComponentAsync<LikedSongs>(RenderMode.ServerPrerendered))
 
 	<script src="_framework/blazor.server.js"></script>

@@ -23,5 +23,6 @@ namespace Spootify.Pages
         {
             Songs = SongService.GetSongs();
         }
+
     }
 }

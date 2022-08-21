@@ -2,6 +2,7 @@
 @using Spootify.Components
 @model SearchModel
 @{
+	ViewData["Title"] = "Search";
 	@(await Html.RenderComponentAsync<Search>(RenderMode.ServerPrerendered))
 
 	<script src="_framework/blazor.server.js"></script>

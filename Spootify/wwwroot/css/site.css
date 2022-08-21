@@ -135,9 +135,48 @@ footer {
     background-color: transparent;
     color: white;
     border: none;
+    position: relative; left: 220px;
 
 }
 
 .playlistBtn:hover {
     text-decoration: underline;
+}
+
+.playlistName {
+    position: relative;
+    left: 220px;
+    outline: none;
+    width: 240px;
+    margin-top: 16px;
+    height: 40px;
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+#makePlaylist {
+    position: relative;
+    left: 220px;
+    color: #0892d0;
+    font-weight: bold;
+}
+
+#makePlaylistBtn {
+    position: relative;
+    left: 220px;
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: #0892d0;
+    color: white;
+    outline: none;
+}
+
+#playlistTitle {
+    margin: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    position: relative; left: 220px;
 }
